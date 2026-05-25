@@ -258,7 +258,7 @@ footer{padding:40px 48px;border-top:1px solid var(--border);display:flex;align-i
 <!-- PROOF -->
 <div class="proof reveal">
   <div class="proof-item"><span>✦</span><span class="proof-num">2,400+</span><span data-en="on the waitlist" data-pt="na lista de espera">on the waitlist</span></div>
-  <div class="proof-item"><span>✦</span><span data-en="Launching 2025" data-pt="Lançamento em 2025">Launching 2025</span></div>
+  <div class="proof-item"><span>✦</span><span data-en="Launching 2026" data-pt="Lançamento em 2026">Launching 2026</span></div>
   <div class="proof-item"><span>✦</span><span>English & Português</span></div>
   <div class="proof-item"><span>✦</span><span data-en="Free to start" data-pt="Gratuito para começar">Free to start</span></div>
 </div>
@@ -514,10 +514,10 @@ function scrollToWaitlist() {
 }
 
 // ── SUPABASE CONFIG ──
-const SB_URL = '%%SB_URL%%';
-const SB_KEY = '%%SB_KEY%%';
+const SB_URL = 'https://nljcfgjiybneaihfieai.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5samNmZ2ppeWJuZWFpaGZpZWFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk2NjI1NzUsImV4cCI6MjA5NTIzODU3NX0.StOlMz-qeLMHFum6pqagwkSeG455hQqGwdy174ex0jU';
 let sbClient = null;
-if (SB_URL && SB_URL !== '%%SB_URL%%') {
+if (SB_URL) {
   sbClient = window.supabase.createClient(SB_URL, SB_KEY);
 }
 
